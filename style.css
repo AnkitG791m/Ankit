@@ -1,0 +1,630 @@
+body {
+    background-color: rgb(1, 1, 29);
+    color: white;
+    background-attachment: fixed;
+    width: 1366;
+    height: 768;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px, 40px;
+    border-bottom: 2px solid #ffffff33;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    font-size: 1.4rem;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    background-color: rgb(7, 4, 12);
+    height: 90px;
+    border: rgb(145, 37, 37);
+
+}
+
+
+
+nav ul li {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    gap: 100px;
+    margin: 0px 23px;
+    transition: 0.2s ease;
+
+}
+
+nav ul li {
+    padding: 0;
+    margin: 0 20px;
+    background: transparent;
+    border: none;
+    display: inline-block;
+}
+
+ul li {
+    padding: 0;
+    margin: 0 20px;
+    background: transparent;
+    border: none;
+    display: inline-block;
+}
+
+/* Reset for all list items */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+:root {
+    --a: rgb(193, 214, 2);
+}
+
+.left {
+    transition: 1s;
+    font-size: 2.1rem;
+    text-align: left;
+    float: left;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+.left:hover {
+    /* transform: scale(1.1); */
+    box-shadow: none;
+    text-shadow: 0 0 7px var(--a),
+        0 0 19px var(--a),
+        0 0 10px var(--a);
+    transition: 0.1s;
+}
+
+
+.home {
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    transition: 0.2s ease;
+}
+
+
+.home:hover {
+    background: none;
+    transform: scale(1.1);
+    box-shadow: none;
+    text-shadow: 0 0 7px var(--main-color),
+        0 0 19px var(--main-color),
+        0 0 10px var(--main-color);
+}
+
+
+.Education {
+    transition: 0.2s ease;
+
+}
+
+.Education:hover {
+    text-shadow: 0 0 7px var(--main-color),
+        0 0 19px var(--main-color),
+        0 0 10px var(--main-color);
+    transform: scale(1.1);
+}
+
+.Projects {
+    transition: 0.2s ease;
+
+}
+
+.Projects:hover {
+    text-shadow: 0 0 7px var(--main-color),
+        0 0 19px var(--main-color),
+        0 0 10px var(--main-color);
+    transform: scale(1.1);
+}
+
+.About {
+    transition: 0.2s ease;
+
+}
+
+.About:hover {
+    text-shadow: 0 0 7px var(--main-color),
+        0 0 19px var(--main-color),
+        0 0 10px var(--main-color);
+    transform: scale(1.1);
+}
+
+.Contact {
+    transition: 0.2s ease;
+
+}
+
+.Contact:hover {
+    text-shadow: 0 0 7px var(--main-color),
+        0 0 19px var(--main-color),
+        0 0 10px var(--main-color);
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+nav .left .right {
+    display: flex;
+    flex-direction: row;
+    gap: 1000px;
+    list-style: none;
+
+}
+
+nav .left .right li {
+    display: flex;
+    justify-content: center;
+    padding: 4px, 10px;
+    cursor: pointer;
+    transition: 3s ease;
+    transition: background 0.3s;
+
+
+}
+
+nav .left .right li:hover {
+    background-color: rgba(249, 249, 249, 0.1);
+    border-radius: 4.9px;
+}
+
+.bg-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.999), rgba(0, 0, 0, 0.5)), url("images/a.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.7;
+    background-attachment: fixed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: initial;
+}
+
+.right {
+    display: flex;
+    float: right;
+    cursor: pointer;
+
+}
+
+
+
+.list {
+    list-style: none;
+    padding: 0px;
+    gap: 29px;
+}
+
+.first {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* elements ko left align karta hai */
+    gap: 100px;
+}
+
+.second {
+    justify-content: left;
+}
+
+:root {
+    --main-color: #3498db;
+}
+
+
+.mainimg {
+    margin-left: 610px;
+    margin-top: 70px;
+}
+
+.mainimg::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+
+}
+
+.btn {
+    padding: 13px 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Glowing animated border */
+.btn::before  {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg,
+        #ff0000, #ff7300, #fffb00, #48ff00,
+        #00ffd5, #002bff, #ff00c8, #ff0000);
+    background-size: 600%;
+    z-index: -2;
+    filter: blur(12px);
+    opacity: 0;
+    border-radius: 16px;
+    transition: opacity 0.3s ease-in-out;
+    animation: glowing 20s linear infinite;
+}
+
+/* Inner background */
+.btn::after  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    z-index: -1;
+    border-radius: 12px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Show glow on hover */
+.btn:hover::before {
+    opacity: 1;
+}
+
+/* 🛠️ THIS IS THE FIXED SELECTOR */
+.btn:active::after {
+    background: transparent;
+}
+
+/* Optional: color on click */
+.btn:active {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Glow animation */
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+/* 
+.btn {
+    padding: 13px 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    
+    }
+    
+    .btn::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        left: 0;
+        top: 0;
+        border-radius: 1
+        }
+        
+        .btn::before {
+    content: "";
+    background: linear-gradient(44deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #ff00c8, #ff0000);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100%, 4px);
+    height: calc(100%, 4px);
+    filter: blur(8px);
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+} */
+.mainimg::before {
+    content: "";
+    background: linear-gradient(44deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #ff00c8, #ff0000);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100%, 4px);
+    height: calc(100%, 4px);
+    filter: blur(8px);
+}
+
+.typing-text {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #3498db;
+}
+
+
+.name {
+    font-size: 3rem;
+    
+}
+
+.right img {
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    display: flex;
+    width: 350px;
+    /* image ko chhota banane ke liye */
+    height: 350px;
+    
+    
+    
+    margin-left: 200px;
+    /* thoda gap right side mein */
+    object-fit: cover;
+    /* image ko crop karke square/circle mein fit karega */
+    border-radius: 50%;
+    
+    /* circle banane ke liye */
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 27px var(--main-color);
+    transition: 0.3s ease-in-out;
+    
+}
+
+.right img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 27px var(--main-color),
+    0 0 49px var(--main-color),
+        0 0 100px var(--main-color);
+        
+}
+
+.img {
+    text-align: left;
+}
+
+.righta {
+    margin: left -99px;
+    ;
+    font-size: 24px;
+    margin-right: 1px;
+    font-weight: bold;
+    margin-top: 30px;
+    
+
+
+
+
+
+}
+
+.p {
+    display: block;
+    margin-right: 170px;
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 700px;
+    margin-left: 20px;
+}
+
+:root {
+    --b: rgb(51, 255, 228);
+    
+}
+
+main section div h4 .ankit {
+    color: rgb(12, 82, 72);
+    text-shadow: 0 0 7px var(--b),
+    0 0 19px var(--b),
+        0 0 10px var(--b);
+    }
+
+    .typing-text::after {
+        content: '|';
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    
+    0%,
+    100% {
+        opacity: 1;
+    }
+    
+    50% {
+        opacity: 0;
+    }
+}
+
+nav ul li a {
+    color: white;
+    font-style: none;
+    list-style: none;
+    text-decoration: none;
+}
+.social{
+    gap: 30px;
+    margin-left: 937px;
+    display: flex;
+    background-color: transparent;
+}
+.social a i{
+    z-index: 1;
+    text-decoration: none;
+    
+}
+.social a{
+  text-decoration: none;
+  position: relative;
+    background-color: transparent;  
+    font-size: 24px;            /* Icon size */
+    width: 50px;                /* Circle width */
+    height: 50px;               /* Circle height */
+    border-radius: 50%;         /* Make it a circle */
+    display: flex;              /* Center icon */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;  
+    font-size: 30px;
+    text-align: left;
+    float: left;
+    justify-content: center;
+    gap: 1000px;
+    z-index: 0;
+}
+
+
+.social a i { z-index: 1; }
+i { z-index: -1; } 
+
+.social {
+    gap: 30px;
+    margin-left: 937px; 
+    display: flex;
+    background-color: transparent;
+   
+}
+
+
+.social a {
+    text-decoration: none;
+    background-color: transparent; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    transition: 0.3s;
+    font-size: 30px;
+
+   
+    position: relative;
+    z-index: 0; 
+}
+
+
+.social a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000; 
+    border-radius: 50%; 
+    transition: background-color 0.3s ease-in-out;
+
+   
+    z-index: -1;
+}
+
+
+.social a::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg,
+            #ff0000, #ff7300, #fffb00, #48ff00,
+            #00ffd5, #002bff, #ff00c8, #ff0000);
+    background-size: 600%;
+    filter: blur(12px);
+    opacity: 0;
+    border-radius: 16px;
+    transition: opacity 0.3s ease-in-out;
+    animation: glowing 20s linear infinite;
+
+   
+}
+
+
+
+.social a i {
+   
+    position: relative; 
+    z-index: 1; 
+    color: white; 
+    font-size: 30px;
+   
+}
+
+.social a:hover::before {
+    opacity: 1; /* Show glow on hover */
+}
+
+
+.social a:active::after {
+    background: transparent;
+}
