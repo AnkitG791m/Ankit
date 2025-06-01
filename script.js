@@ -62,3 +62,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     typeText();
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.querySelector(".btn1");
+    const aboutSection = document.getElementById("details");
+    
+    console.log("btn:", btn);
+    console.log("aboutSection:", aboutSection);
+
+    if (btn && aboutSection) {
+        btn.addEventListener("click", function () {
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+        });
+    } else {
+        console.error("Button or About section not found!");
+    }
+});
+
+
